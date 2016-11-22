@@ -96,13 +96,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        radioGroup1.setOnCheckedChangeListener(
-                new RadioGroup.OnCheckedChangeListener() {
-                    @Override
-                    public void onCheckedChanged(RadioGroup group, int checkedId) {
-                        RadioButton radioButton = (RadioButton) findViewById(radioGroup1.getCheckedRadioButtonId());
-                        Toast.makeText(getApplicationContext(), radioButton.getText().toString() + "身份被选中", Toast.LENGTH_SHORT).show();
-                    }
-                });
+//        radioGroup1.setOnCheckedChangeListener(
+//                new RadioGroup.OnCheckedChangeListener() {
+//                    @Override
+//                    public void onCheckedChanged(RadioGroup group, int checkedId) {
+//                        RadioButton radioButton = (RadioButton) findViewById(radioGroup1.getCheckedRadioButtonId());
+//                        Toast.makeText(getApplicationContext(), radioButton.getText().toString() + "身份被选中", Toast.LENGTH_SHORT).show();
+//                    }
+//                });
     }
 }
