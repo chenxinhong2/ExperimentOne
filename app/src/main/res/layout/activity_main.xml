@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_name"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        />
+
+    <ImageView
+        android:contentDescription="@string/imagedescription"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/sysu"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2"
+        >
+        <TableRow
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                style="@style/myxmlstyle"
+                android:text="@string/alias"
+                android:gravity="end"
+                android:textSize="18sp"
+                android:layout_marginStart="20dp"
+                android:textColor="#000"
+                />
+            <EditText
+                android:id="@+id/edit1"
+                style="@style/myxmlstyle"
+                android:layout_marginEnd="20dp"
+                android:hint="@string/aliashint"
+                android:inputType="text"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="10dp">
+            <TextView
+                style="@style/myxmlstyle"
+                android:gravity="end"
+                android:text="@string/password"
+                android:textSize="@dimen/textSize"
+                android:layout_marginStart="20dp"
+                android:textColor="#000"
+                />
+            <EditText
+                android:id="@+id/edit2"
+                style="@style/myxmlstyle"
+                android:layout_marginEnd="20dp"
+                android:textSize="@dimen/textSize"
+                android:hint="@string/passwordhint"
+                android:inputType="textPassword"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <RadioGroup
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/personselect"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/button1"
+            android:textSize="@dimen/textSize"
+            android:checked="true"
+            android:text="@string/student"/>
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/button2"
+            android:layout_marginEnd="10dp"
+            android:textSize="@dimen/textSize"
+            android:text="@string/teacher"/>
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/button3"
+            android:textSize="@dimen/textSize"
+            android:text="@string/group"/>
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/button4"
+            android:textSize="@dimen/textSize"
+            android:text="@string/admin"/>
+
+    </RadioGroup>
+
+
+    <TableLayout
+        style="@style/myxmlstyle"
+        >
+        <TableRow android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/button11"
+                android:layout_marginEnd="20dp"
+                style="@style/myxmlstyle"
+                android:text="@string/login"
+                android:textSize="@dimen/textSize"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttonback"/>
+
+            <Button
+                android:id="@+id/button12"
+                style="@style/myxmlstyle"
+                android:text="@string/register"
+                android:textSize="@dimen/textSize"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttonback"/>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
